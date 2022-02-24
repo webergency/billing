@@ -1,0 +1,21 @@
+{
+  "name": "@webergency/billing",
+  "description": "Billing",
+  "version": "0.0.1",
+  "author": "radixxko",
+  "license": "MIT",
+  "main": "lib/billing.js",
+  "files": [
+    "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webergency/billing.git"
+  },
+  "keywords": [
+    "billing",
+    "webergency"
+  ],
+  "dependencies": {
+  }
+}
