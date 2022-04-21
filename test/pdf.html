@@ -212,7 +212,7 @@
                 <tr>
                     <td style="padding-top: 1.2mm;padding-bottom: 1.2mm;width:3%;">{ i + 1 }.</td>
                     <td style="border-right-width:0.5px;padding-top: 1.2mm;padding-bottom: 1.2mm;padding-right:1.6mm;font-weight: medium;line-height:1.25em;width:39%;">{ item.name }</td>
-                    <td style="border-right-width:0.5px;padding-top: 1.2mm;padding-bottom: 1.2mm;width:8%;text-align:center;">{ item.id }</td>
+                    <td style="border-right-width:0.5px;padding-top: 1.2mm;padding-bottom: 1.2mm;width:8%;text-align:center;">{ parseInt( item.id ) < 4294967290 ? item.id : '' }</td>
                     <td style="border-right-width:0.5px;padding-right:1.6mm;padding-top: 1.2mm;padding-bottom: 1.2mm;text-align: right;width:10%;">#{ format_number( item.quantity, undefined, 'font-weight: medium;' )} ks</td>
                     <td style="border-right-width:0.5px;padding-right:1.6mm;padding-top: 1.2mm;padding-bottom: 1.2mm;text-align: right;width:16%;">
                         #{ format_price( item.price / ( 1 + item.vat ), 2, 'font-weight:medium' )}
