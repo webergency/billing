@@ -101,9 +101,9 @@ async function renderTest()
         const fs = require('fs'), PDF = require('../../../liqd-js/pdf');
         const Invoice = new PDF( require('fs').readFileSync( __dirname + '/pdf.html', 'utf8' ));
 
-        let document = await billing.document.get( 'MSK22002065' );
+        let document = await billing.document.get( 'MSK22000006' );
 
-        Invoice.render( document, { locale: 'sk' });
+        Invoice.render( document, { locale: 'sk' }, __dirname + '/invoice.pdf');
 
         console.log( document );
     }
@@ -113,6 +113,6 @@ async function renderTest()
     }
 }
 
-importTest();
+//importTest();
 
-//renderTest();
+renderTest();

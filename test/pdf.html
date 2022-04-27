@@ -143,10 +143,16 @@
                 </tr>
                 <tr>
                     <td>
-                        <b>Dátum splatnosti:</b>
+                        if( typeof due !== 'undefined' )
+                        {
+                            <b>Dátum splatnosti:</b>
+                        }
                     </td>
                     <td style="text-align: right;padding-right:4.8mm;">
-                        <b>{ format_date( due )}</b>
+                        if( typeof due !== 'undefined' )
+                        {
+                            <b>{ format_date( due )}</b>
+                        }
                     </td>
                     <td style="padding-left:4.8mm;">
                         <b>Variabilný symbol:</b>
